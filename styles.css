@@ -21,7 +21,7 @@ body {
 
 main {
     background-color: var(--grey-800);
-    height:495px;
+    height:500px;
     width: 300px;
     display: flex;
     flex-direction: column;
@@ -29,6 +29,7 @@ main {
     padding: 25px;
     border-radius: 10px;
     margin: 90px;
+    justify-content: flex-end;
 }
 
 img {
@@ -63,12 +64,19 @@ h2 {
     margin: 21px;
 }
 
+.btn-container {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    align-items: center;
+}
+
 button {
     background-color: var(--grey-700);
     font-family: "Inter", sans-serif;
     color: var(--white);
     font-weight: 600;
-    margin: 6px;
+    margin-top: 12px;
     border: none;
     border-radius: 10px;
     padding: 15px;
