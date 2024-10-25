@@ -1,6 +1,4 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-
 :root {
     --green: hsl(75, 94%, 57%);
     --white: hsl(0, 0%, 100%);
@@ -11,7 +9,7 @@
 
 body {
     background-color: var(--grey-900);
-    height: 100vh;
+    height: 95vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,20 +20,19 @@ body {
 main {
     background-color: var(--grey-800);
     height:500px;
-    width: 300px;
+    width: 280px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 25px;
+    padding: 1.5rem;
     border-radius: 10px;
-    margin: 90px;
     justify-content: flex-end;
 }
 
 img {
     border-radius: 100px;
     height: 80px;
-    margin-bottom: 6px;
+    margin-bottom: 0.6rem;
 }
 
 .title {
@@ -50,7 +47,7 @@ img {
 }
 
 .title p {
-    line-height: 1px;
+    line-height: 0.3rem;
     font-size: 14px;
     font-weight: 600;
     color: var(--green);
@@ -61,39 +58,45 @@ h2 {
     font-weight: 400;
     text-align: center;
     color: var(--white);
-    margin: 21px;
+    margin-top: 1.3rem;
 }
 
-.btn-container {
+.link-container {
+    width: 100%;
     display: flex;
-    flex-direction: column;
-    width: 300px;
-    align-items: center;
 }
 
-button {
-    background-color: var(--grey-700);
-    font-family: "Inter", sans-serif;
-    color: var(--white);
-    font-weight: 600;
-    margin-top: 12px;
-    border: none;
-    border-radius: 10px;
-    padding: 15px;
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
     width: 100%;
 }
+  
+li a {
+    display: flex;
+    color: var(--white);
+    margin-top: 0.7rem;
+    width: 100%;
+    height: 2.3rem;
+    align-content: center;
+    justify-content: center;
+    text-decoration: none;
+    border-radius: 10px;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    background-color: var(--grey-700);
+}
 
-button:hover {
-    background-color: var(--green);
+a:link {
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0.2rem;
+}
+
+a:hover {
     color: var(--grey-900);
-}
-
-.attribution { 
-    font-size: 11px; 
-    text-align: center; 
-    color: white;
-}
-
-.attribution a { 
-    color: hsl(228, 45%, 44%); 
+    background-color: var(--green);
 }
